@@ -1,14 +1,14 @@
 <?php
-class Ipsms{
+class DB{
 private $connect = NULL;
 
 
 public function __construct()
   {
 $servername = "localhost";
-$username = "";
+$username = "root";
 $password = "";
-$dbname = "";
+$dbname = "smhos";
   $this->connect = "";
   try{
   $this->connect = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
